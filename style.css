@@ -1,0 +1,239 @@
+/*fontของเว็บ*/
+*{
+  font-family: "Krub","Kanit", sans-serif;
+}
+/*ภาพพื้นหลัง*/
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg-web-page.png);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*ภาพไอเท็มในเว็บ*/
+  .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; 
+    height: 150px; 
+  }
+  .background-image:nth-child(2) {
+    top: 40%;
+    left: 10%;
+    transform: rotate(-30deg);
+  }
+  
+  .background-image:nth-child(3) {
+    top: 30%;
+    left: 60%;
+  }
+  .background-image:nth-child(4) {
+    top: 70%;
+    left: 70%;
+    transform: rotate(-120deg);
+  }
+/*ภาพโลโก้ของเว็บ*/
+  #logo {
+    position: relative;
+    width: 90%;
+    z-index: 9; 
+  }
+/*แถบเมนูและแถบ navigator bar*/
+  .menu{
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header{
+    margin-top: 5vh;
+    position: fixed;
+    width: 70vw;
+    height: 10vh;
+    border: 0 solid rgb(109, 121, 150);
+    border-radius: 5vh;
+    background-color: azure;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0.75;
+    box-shadow: 1px 1px 20px rgb(129, 129, 129);
+  }
+/*mode ของ header ในขนาดเล็กกว่า 600px */
+@media screen and (max-width: 600px) {
+  header{
+    margin: 0;
+    width: 100vw;
+    height: 12vh;
+    box-shadow: 1px 0px 20px rgb(129, 129, 129);
+    border-radius: 0;
+
+  }
+}
+  header img{
+    height: 100%;
+  }
+
+  .menu-icon{
+    margin: auto 7%;
+    width: 6vh;
+    height: 4vh;
+    background-color: none;
+    border: 0px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu-icon div{
+    background-color: black;
+    height: 10%;
+    width: 100%;
+    transition: all 0.5s, opacity 0.3s , top 0.3s  ease-in-out;
+    position: absolute;
+  }
+  .menu-icon div:nth-child(1) {
+    top: 0;
+  }
+  
+  .menu-icon div:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .menu-icon div:nth-child(3) {
+    bottom: 0;
+  }
+  /* เมื่อคลิก */
+  .menu-icon.active div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+  .menu-icon.active div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    top:  50%;
+  }
+/*แถบเมนูหน้าเว็บที่ปรากฏออกมา เมื่อกด ที่ button*/
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  border-radius: 5vw  5vw 0 0;
+  box-shadow: 1px 0px 20px rgb(129, 129, 129);
+  background-color: azure;
+  opacity: 1;
+  z-index: 10;
+}
+nav a{
+  margin: 4vh auto;
+  color: black;
+  text-decoration: none;
+}
+nav{
+  bottom: -100%;
+  transition: bottom 0.5s ease-out
+}
+nav.active {
+  bottom: 0;
+}
+
+/*ข้อความที่ใส่ในเว็บ*/
+.container-text{
+  margin: 10vh auto;
+  padding: 5%;
+  width: 50vw;
+  background-color: white;
+  border-radius: 5vw;
+}
+/*ภาพตกแต่ง*/
+#gok-people{
+  position: absolute;
+  width: 30vw;
+  border-radius: 2vw;
+  transform: rotate(-20deg) translate(+100%,200%);
+}
+/*giveaway effect*/
+#giveaway{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10vh;
+}
+#img-giveaway{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5vh;
+}
+
+.gw{
+  width: 30%;
+  box-shadow: 1px 1px 30px rgb(251, 234, 121);
+}
+#gw-1{
+  transform: rotate(-20deg);
+  z-index: -1;
+}
+#gw-2{
+  transform: rotate(+10deg);
+}
+.btn-giveaway{
+  width: 30vw;
+  height: 10vh;
+  border-radius: 5vw;
+  border: 1px solid black;
+  background-color: rgb(251, 234, 121);
+  box-shadow: 5px 5px 0 white;
+}
+/*Thank you*/
+#thank-you{
+  margin: 10vh auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.background-image-ty {
+  position: absolute;
+  width: 150px; 
+  height: 150px; 
+}
+.background-image-ty:nth-child(2) {
+  transform: translate(-30vw, -50%)
+}
+
+.background-image-ty:nth-child(3) {
+  transform: translate(+40vw, 0)
+}
+.background-image-ty:nth-child(4) {
+  transform: translate(+10vw, +100%) rotate(-120deg);
+}
