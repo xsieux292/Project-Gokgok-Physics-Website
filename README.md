@@ -3,7 +3,7 @@
 Welcome to my first web development project!
 
 This website is created to support and showcase **Gokgok Physics**, my educational page where I share physics knowledge, insights, and interesting experiments.  
-You can visit the official page here: [Gokgok Physics on Instagram](https://www.instagram.com/gokgok.physics/).
+You can visit the official Website page here: [Gokgok Physics Website](https://xsieux292.github.io/Project-Gokgok-Physics-Website/).
 
 ## About This Project
 
