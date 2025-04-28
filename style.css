@@ -192,6 +192,12 @@ nav.active {
   justify-content: center;
   margin: 5vh;
 }
+@media screen and (max-width: 600px) {
+  #img-giveaway{
+    width: 125%;
+    height: 50%;
+  }
+}
 
 .gw{
   width: 30%;
