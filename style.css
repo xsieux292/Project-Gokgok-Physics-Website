@@ -177,6 +177,11 @@ nav.active {
   border-radius: 2vw;
   transform: rotate(-20deg) translate(+100%,200%);
 }
+@media screen and (max-width: 625px) {
+  #gok-people{
+    transform: rotate(-20deg) translate(+100%,300%);
+  }
+}
 /*giveaway effect*/
 #giveaway{
   height: 70vh;
@@ -192,10 +197,13 @@ nav.active {
   justify-content: center;
   margin: 5vh;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 630px) {
+  #giveaway h1{
+    font-size: larger;
+  }
   #img-giveaway{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 170px;
   }
 }
 
