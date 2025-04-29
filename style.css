@@ -83,7 +83,7 @@ body{
     height: 12vh;
     box-shadow: 1px 0px 20px rgb(129, 129, 129);
     border-radius: 0;
-
+    top: 0;
   }
 }
   header img{
@@ -169,7 +169,7 @@ nav.active {
 
 /*ข้อความที่ใส่ในเว็บ*/
 .container-text{
-  margin: 10vh auto;
+  margin: 150px auto;
   padding: 5%;
   width: 50vw;
   background-color: white;
@@ -201,7 +201,7 @@ nav.active {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 10vh;
+  margin: 150px auto;
 }
 #img-giveaway{
   display: flex;
@@ -240,7 +240,7 @@ nav.active {
 }
 /*Thank you*/
 #thank-you{
-  margin: 10vh auto;
+  margin: 150px auto;
   width: 100vw;
   height: 100vh;
   display: flex;
